@@ -11,7 +11,7 @@ This repository contains JavaScript solutions to daily coding challenges provide
 Happy coding!
 
 <details>
-<summary>Coding Interview Problem</summary>
+<summary>Problem#1[Hard]</summary>
 
 **Problem Statement**
 
