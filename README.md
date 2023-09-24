@@ -39,7 +39,8 @@ function getProductOfArray(array) {
 ```
 
 **Solution 2 - (Optimized O(n) Time Complexity)**
-Create Arrays for Left and Right Side of the Product 
+
+Create Arrays for the Left and Right Side of the Product.
 
 ```javascript
 function getProductOfArray(array) {
