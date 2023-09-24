@@ -4,14 +4,9 @@ This repository contains JavaScript solutions to daily coding challenges provide
 
 Happy coding!
 
-# daily-coding-problem
-
-This repository contains JavaScript solutions to daily coding challenges provided by [Daily Coding Problem](https://www.dailycodingproblem.com/). Each solution is designed to solve a specific coding problem and can be a valuable resource for improving problem-solving skills.
-
-Happy coding!
-
 <details>
 <summary>Problem#1[Hard]</summary>
+
 
 **Problem Statement**
 
