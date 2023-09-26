@@ -97,7 +97,7 @@ node = Node('root', Node('left', Node('left.left')), Node('right'))
 assert deserialize(serialize(node)).left.left.val == 'left.left'
 ```
 
-**Solution In Javascript (DFS approach)**
+**Solution In Javascript (DFS approach - Preorder)**
 
  serializing and deserializing a binary tree using the Depth-First Search (DFS) approach to traverse the tree.
 ```javascript
