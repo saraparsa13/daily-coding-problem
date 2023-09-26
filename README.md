@@ -96,6 +96,61 @@ The following test should pass:
 node = Node('root', Node('left', Node('left.left')), Node('right'))
 assert deserialize(serialize(node)).left.left.val == 'left.left'
 ```
+
+**Solution**
+
+```javascript
+class Node {
+  constructor(val, left = null, right = null) {
+    this.val = val;
+    this.left = left;
+    this.right = right;
+  }
+}
+
+function serialize(node) {
+  let res = [];
+  function dfs(node) {
+    if (!node) {
+      res.push("N");
+      return;
+    }
+    res.push(node.val);
+    dfs(node.left);
+    dfs(node.right);
+  };
+  dfs(node);
+  return res.join(',');
+};
+
+function deserialize(string) {
+  data = string.split(',');
+  let i = 0;
+
+  function dfs() {
+    if (data[i] === "N") {
+      i++;
+      return null;
+    }
+
+    const node = new Node(data[i]);
+    i++;
+    node.left = dfs();
+    node.right = dfs();
+    return node;
+  }
+
+  return dfs();
+}
+
+
+const node = new Node('root', new Node('left', new Node('left.left')), new Node('right'));
+const serialized = serialize(node);
+const deserialized = deserialize(serialized);
+
+console.log(deserialized.left.left.val); // Outputs: 'left.left'
+```
+
 </details>
 
 
