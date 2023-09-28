@@ -97,7 +97,7 @@ node = Node('root', Node('left', Node('left.left')), Node('right'))
 assert deserialize(serialize(node)).left.left.val == 'left.left'
 ```
 
-**Solution In Javascript (DFS approach - Preorder)**
+**Solution 1 (DFS approach - Preorder)**
 
  serializing and deserializing a binary tree using the Depth-First Search (DFS) approach to traverse the tree.
 ```javascript
@@ -156,6 +156,7 @@ console.log(deserialized.left.left.val); // Outputs: 'left.left'
 
 serialize and deserialize functions both have the O(N) complexity, where N is the number of nodes in the binary tree. This is because the functions visit each node exactly once while performing the DFS traversal.
 
+**Solution 2 (DFS approach - Inorder) 
 </details>
 
 
