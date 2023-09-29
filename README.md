@@ -156,7 +156,7 @@ console.log(deserialized.left.left.val); // Outputs: 'left.left'
 
 serialize and deserialize functions both have the O(N) complexity, where N is the number of nodes in the binary tree. This is because the functions visit each node exactly once while performing the DFS traversal.
 
-**Solution 2 (DFS approach - Inorder)**
+**Solution 2 (DFS approach - Postorder)**
 </details>
 
 
