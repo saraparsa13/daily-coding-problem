@@ -173,6 +173,7 @@ You can modify the input array in-place.
 
 **Solution 1 - Brute Force (O(n^2) Time Complexity)**
 <br/>
+```javascript
 function findFirstMissingPositive(array) {
   let max = array[0];
   let min = array[0];
@@ -224,6 +225,6 @@ function findFirstMissingPositive(array) {
 }
 
 console.log(findFirstMissingPositive([1, 1, 2, 2, 3, 3]));
-
+```
 
 </details>
