@@ -200,11 +200,9 @@ function findFirstMissingPositive(array) {
   let positiveInteger;
   for (let i = 0; i < counterArray.length; i++) {
     if (counterArray[i] !== 0) {
-
       if (positiveInteger) {
         break;
       }
-
       for (let j = 0; j < array.length; j++) {
         if (counterArray[i] === array[j]) {
           positiveInteger = undefined;
@@ -213,14 +211,12 @@ function findFirstMissingPositive(array) {
           positiveInteger = counterArray[i];
         }
       }
-
     }
   }
 
   if (!positiveInteger) {
     return counterArray[counterArray.length - 1] + 1;
   }
-
   return positiveInteger;
 }
 
