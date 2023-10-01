@@ -158,20 +158,6 @@ serialize and deserialize functions both have the O(N) complexity, where N is th
 
 **Solution 2 (DFS approach - Postorder)**
 
-function serialize(node) {
-  let res = [];
-  function dfs(node) {
-    if (!node) {
-      res.push("N");
-      return;
-    }
-    res.push(node.val);
-    dfs(node.left);
-    dfs(node.right);
-  };
-  dfs(node);
-  return res.join(',');
-};
 
 
 </details>
