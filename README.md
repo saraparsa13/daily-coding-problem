@@ -161,7 +161,7 @@ serialize and deserialize functions both have the O(N) complexity, where N is th
 
 
 <details>
-<summary>Problem#3[Hard]</summary>
+<summary>Problem#3[Medium]</summary>
 <br/>
 Good morning! Here's your coding interview problem for today.
 
