@@ -174,53 +174,7 @@ You can modify the input array in-place.
 **Solution 1 - Brute Force (O(n^2) Time Complexity)**
 <br/>
 ```javascript
-function findFirstMissingPositive(array) {
-  let max = array[0];
-  let min = array[0];
-  let counterArray = [];
 
-  for (let i = 1; i < array.length; i++) {
-    if (array[i] < min) {
-      min = array[i]
-    }
-
-    if (array[i] > max) {
-      max = array[i]
-    }
-  }
-
-  for (let i = min; i <= max; i++) {
-    counterArray.push(i);
-  }
-
-  if (counterArray[counterArray.length - 1] < 0) {
-    return 1;
-  }
-
-  let positiveInteger;
-  for (let i = 0; i < counterArray.length; i++) {
-    if (counterArray[i] !== 0) {
-      if (positiveInteger) {
-        break;
-      }
-      for (let j = 0; j < array.length; j++) {
-        if (counterArray[i] === array[j]) {
-          positiveInteger = undefined;
-          break;
-        } else {
-          positiveInteger = counterArray[i];
-        }
-      }
-    }
-  }
-
-  if (!positiveInteger) {
-    return counterArray[counterArray.length - 1] + 1;
-  }
-  return positiveInteger;
-}
-
-console.log(findFirstMissingPositive([1, 1, 2, 2, 3, 3]));
 ```
 
 </details>
