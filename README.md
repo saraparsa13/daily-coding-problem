@@ -163,15 +163,16 @@ serialize and deserialize functions both have the O(N) complexity, where N is th
 <details>
 <summary>Problem#3[Hard]</summary>
 <br/>
-This problem was asked by Stripe.
+Good morning! Here's your coding interview problem for today.
 
-Given an array of integers, find the first missing positive integer in linear time and constant space. In other words, find the lowest positive integer that does not exist in the array. The array can contain duplicates and negative numbers as well.
+This problem was asked by Facebook.
 
-For example, the input [3, 4, -1, 1] should give 2. The input [1, 2, 0] should give 3.
+Given the mapping a = 1, b = 2, ... z = 26, and an encoded message, count the number of ways it can be decoded.
 
-You can modify the input array in-place.
+For example, the message '111' would give 3, since it could be decoded as 'aaa', 'ka', and 'ak'.
 
-**Solution 1 - Brute Force (O(n^2) Time Complexity)**
+You can assume that the messages are decodable. For example, '001' is not allowed.
+**Solution**
 <br/>
 ```javascript
 
